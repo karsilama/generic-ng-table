@@ -21,6 +21,11 @@
           	name : "janio",
             surename : "isacura",
             level : "venezolano boton"
+          },
+          {
+          	name : "alguien",
+            surename : "mas",
+            level : "entre nosotros"
           }
         ];
   });

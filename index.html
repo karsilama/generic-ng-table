@@ -16,16 +16,19 @@
          </th>
        </tr>
      </thead> 
-     <tbody>
-       <tr ng-repeat="user in tctrl.users | filter:searchUser">
+     <tbody ng-init="name=user.name">
+       <tr ng-repeat="user in tctrl.users | filter:searchUser | orderBy:name:reverse">
          <td ng-repeat="(key,value) in user">
            <span ng-bind="user[key]"></span>
          </td>
        </tr>
      </tbody>
     </table>
-    <form action="#"class="pull-left">
-      <input type="text" class="form-control" ng-model="searchUser">
+    <form action="#"class="pull-left" ng-init="reverse=true">
+      <fieldset>
+        <input type="text" class="form-control" ng-model="searchUser" placeholder="Filtrar usuario">
+        <input type="button" class="form-control" ng-value="reverse ? 'descendente' : 'ascendente'" ng-click="reverse=!reverse">
+      </fieldset>
     </form>
   </body>
 </html>
