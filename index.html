@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <script src="/bower_components/angular/angular.min.js" charset="utf-8"></script>
+    <script src="app.js"></script>
+  </head>
+  <body ng-app="myApp">
+    <table class="table" ng-controller="TableController as tctrl">
+     <thead>
+       <tr>
+         <th ng-repeat="(key, value) in tctrl.users[0]">
+            <span ng-bind="key"></span>
+         </th>
+       </tr>
+     </thead> 
+     <tbody>
+       <tr ng-repeat="user in tctrl.users | filter:searchUser">
+         <td ng-repeat="(key,value) in user">
+           <span ng-bind="user[key]"></span>
+         </td>
+       </tr>
+     </tbody>
+    </table>
+    <form action="#"class="pull-left">
+      <input type="text" class="form-control" ng-model="searchUser">
+    </form>
+  </body>
+</html>

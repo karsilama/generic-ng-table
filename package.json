@@ -1,0 +1,26 @@
+{
+  "name": "gtable",
+  "version": "1.0.0",
+  "description": "generic table",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karsilama/generiTable.git"
+  },
+  "keywords": [
+    "generic",
+    "table"
+  ],
+  "author": "jesus colavita",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karsilama/generiTable/issues"
+  },
+  "homepage": "https://github.com/karsilama/generiTable#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
