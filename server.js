@@ -1,11 +1,12 @@
- var express = require("express");
- var app = express();
+var express = require("express");
+var app = express();
 
-app.use("/bower_components", express.static( __dirname + "/bower_components") );
-app.use("/app.js", express.static( __dirname + "/app.js") );
+app.use( "/app", express.static( __dirname + "/app" ) );
+app.use( "/node_modules", express.static( __dirname + "/node_modules" ) );
+app.use( "/statics", express.static( __dirname + "/statics" ) );
 
- app.get("/genericTable", function(req, res){
-	res.sendFile(__dirname + "/index.html");
-})
+app.get("/genericTable", function( req, res){
+  res.sendFile( __dirname + "/app/index.html" );
+});
 
-app.listen(9002);
+app.listen(9000);

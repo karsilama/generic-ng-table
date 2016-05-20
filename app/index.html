@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
-    <script src="/bower_components/angular/angular.min.js" charset="utf-8"></script>
-    <script src="app.js"></script>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+    <script src="/node_modules/angular/angular.min.js" charset="utf-8"></script>
+    <script src="/app/app.js"></script>
   </head>
   <body ng-app="myApp">
     <table class="table" ng-controller="TableController as tctrl">
@@ -15,7 +16,7 @@
             <span ng-bind="key"></span>
          </th>
        </tr>
-     </thead> 
+     </thead>
      <tbody ng-init="name=user.name">
        <tr ng-repeat="user in tctrl.users | filter:searchUser | orderBy:name:reverse">
          <td ng-repeat="(key,value) in user">

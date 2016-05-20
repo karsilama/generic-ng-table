@@ -1,26 +1,26 @@
 {
-  "name": "gtable",
+  "name": "table",
   "version": "1.0.0",
-  "description": "generic table",
-  "main": "index.js",
+  "description": "generic table with angular\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/karsilama/generiTable.git"
+    "url": "git+https://github.com/karsilama/genericTable.git"
   },
-  "keywords": [
-    "generic",
-    "table"
-  ],
   "author": "jesus colavita",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/karsilama/generiTable/issues"
+    "url": "https://github.com/karsilama/genericTable/issues"
   },
-  "homepage": "https://github.com/karsilama/generiTable#readme",
+  "homepage": "https://github.com/karsilama/genericTable#readme",
   "dependencies": {
-    "express": "^4.13.4"
+    "angular": "^1.5.5",
+    "bootstrap": "^3.3.6",
+    "express": "^4.13.4",
+    "font-awesome": "^4.6.1"
   }
 }
